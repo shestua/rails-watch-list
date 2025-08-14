@@ -1,0 +1,9 @@
+<h1>Nouvelle liste</h1>
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name, label: "Nom de la liste" %>
+  <%= f.button :submit, "Créer", class: "btn btn-success" %>
+<% end %>
+
+<%= link_to "Annuler", lists_path, class: "btn btn-secondary mt-2" %>
+
